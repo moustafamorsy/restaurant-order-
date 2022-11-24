@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Lacosta’s Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </div> 
+    </header>
+ <main>
+    <section id="menu">
+
+    </section>
+    
+    <section class="order hidden">
+        <h4>Your Order</h4>
+        <div class="order-item">
+
+        </div>
+        <div id="payment">
+            <div class="contain discount hide">
+                <p>discount:</p>
+                <p>$<span class="discount-value">0</span></p>
+            </div>
+            <div class="contain">
+                <p>Total price:</p>
+                <p>$<span class="total">0</span></p>
+            </div>
+            
+        </div>
+       
+        <button class="complete-order close">Complete order</button>
+    </section>
+</main>
+
+<form class="form hidden">
+    <p class="tab close">close</p>
+    <h1>Enter card details</h1>
+ <input id="input-name" type="text"  placeholder="Enter your name" required>
+ <input id="card" type="text" pattern="[0-9]*" inputmode="numeric" required placeholder="Enter card number">
+ <input id="ccv" type="text" required placeholder="Enter CCV">
+ <button class="Pay">Pay</button>
+</form>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
